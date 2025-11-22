@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <title>板塊地球探險家 | Tectonic Earth Explorer</title>
   <link rel="stylesheet" href="style.css" />
-  <script src="libs/three.min.js"></script>
+  <!-- Three.js CDN (修復：用最新穩定版) -->
+  <script src="https://cdn.jsdelivr.net/npm/three@0.168.0/build/three.min.js"></script>
 </head>
 <body>
   <div id="container"></div>
@@ -14,6 +15,7 @@
     <div id="timeDisplay">現在：0 Ma</div>
     <input type="range" id="timeSlider" min="0" max="540" value="0" step="1" />
     <div id="info">拖動滑桿回到 5.4 億年前 → 盤古大陸會自動合成！</div>
+    <div id="debug" style="color: yellow; font-size: 12px;"></div> <!-- 新增：debug 顯示 -->
   </div>
 
   <script src="app.js"></script>
