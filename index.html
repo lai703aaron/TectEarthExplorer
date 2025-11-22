@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>板塊地球探險家 | Tectonic Earth Explorer</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="libs/three.min.js"></script>
+</head>
+<body>
+  <div id="container"></div>
+  
+  <div id="ui">
+    <div id="timeDisplay">現在：0 Ma</div>
+    <input type="range" id="timeSlider" min="0" max="540" value="0" step="1" />
+    <div id="info">拖動滑桿回到 5.4 億年前 → 盤古大陸會自動合成！</div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
