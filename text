@@ -1,0 +1,19 @@
+Tectonic-Earth-Mobile/
+├── Assets/
+│   ├── Scripts/
+│   │   ├── EarthController.cs          ← 地球旋轉縮放
+│   │   ├── TectonicTimeMachine.cs      ← 時間軸核心（重點）
+│   │   ├── PlateBoundaryRenderer.cs    ← 板塊邊界線
+│   │   └── GPlatesParser.cs            ← 解析 .rot 檔案
+│   ├── Materials/
+│   │   ├── EarthMat.mat
+│   │   └── CoastlineSDF.mat           ← 用 Shader 畫海岸線
+│   ├── Shaders/
+│   │   └── SDF_Coastline.shader       ← 簽距場海岸線
+│   ├── Data/
+│   │   └── set3_540Ma_to_present.rot ← GPlates 最經典模型（已附下載連結）
+│   ├── Prefabs/
+│   │   └── Earth.prefab
+│   └── Scenes/
+│       └── MainScene.unity
+└── Packages/manifest.json            ← 已加入 TextMeshPro
