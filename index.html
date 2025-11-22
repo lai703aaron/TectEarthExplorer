@@ -1,23 +1,20 @@
 <!DOCTYPE html>
-<html lang="zh-TW">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <title>板塊地球探險家 | Tectonic Earth Explorer</title>
-  <link rel="stylesheet" href="style.css" />
-  <!-- Three.js CDN (修復：用最新穩定版) -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tectonic Earth Explorer</title>
+  <link rel="stylesheet" href="style.css">
   <script src="https://cdn.jsdelivr.net/npm/three@0.168.0/build/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.168.0/examples/js/controls/OrbitControls.min.js"></script> <!-- For zoom/rotate -->
 </head>
 <body>
   <div id="container"></div>
-  
   <div id="ui">
-    <div id="timeDisplay">現在：0 Ma</div>
-    <input type="range" id="timeSlider" min="0" max="540" value="0" step="1" />
-    <div id="info">拖動滑桿回到 5.4 億年前 → 盤古大陸會自動合成！</div>
-    <div id="debug" style="color: yellow; font-size: 12px;"></div> <!-- 新增：debug 顯示 -->
+    <div id="timeDisplay">Current: 0 Ma</div>
+    <input type="range" id="timeSlider" min="0" max="540" value="0" step="1">
+    <div id="info">Slide to explore tectonic history (e.g., Pangaea at ~200 Ma)</div>
   </div>
-
   <script src="app.js"></script>
 </body>
 </html>
